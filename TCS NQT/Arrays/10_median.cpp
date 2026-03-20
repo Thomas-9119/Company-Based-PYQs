@@ -1,12 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 void median(int arr[],int n){
-  n = sizeof(arr);
+  n = sizeof(*arr);
   sort(arr,arr+n);
   if(n%2==0){
     int ind1 = (n/2)-1;
     int ind2= n/2;
-    cout<<double((arr[ind1]+arr[ind2])/2);
+    cout<<double((arr[ind1]+arr[ind2])/2.0);
 
   }else{
     cout<<arr[n/2];
